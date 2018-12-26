@@ -210,6 +210,40 @@ class CensorWords
         $leet_replace['y'] = '(y|y\.|y\-|¥|γ|ÿ|ý|Ÿ|Ý)';
         $leet_replace['z'] = '(z|z\.|z\-|Ζ)';
 
+        $leet_replace['а'] = '(а|а\.|а\-|А|4|@|Á|á|À|Â|à|Â|â|Ä|ä|Ã|ã|Å|å|α|Δ|Λ|λ|a|А)';
+        $leet_replace['б'] = '(б|б\.|б\-|Б|6)';
+        $leet_replace['в'] = '(в|в\.|в\-|В|B|b|8|\|3|ß|Β|β)';
+        $leet_replace['г'] = '(г|г\.|г\-|Г|γ|r)';
+        $leet_replace['д'] = '(д|д\.|д\-|Д|Δ|δ)';
+        $leet_replace['е'] = '(е|е\.|е\-|Е|ε|Є|e|E|3|€|È|è|É|é|Ê|ê|∑|ё)';
+        $leet_replace['ё'] = '(ё|ё\.|ё\-|Ё|Е|ε|Є|e|E|3|€|È|è|É|é|Ê|ê|∑|е)';
+        $leet_replace['ж'] = '(ж|ж\.|ж\-|Ж)';
+        $leet_replace['з'] = '(з|з\.|з\-|З|3|Z|ζ|z)';
+        $leet_replace['и'] = '(и|и\.|и\-|И|Η|η|n|N)';
+        $leet_replace['й'] = '(й|й\.|й\-|Й|И|Η|η|n|N|и)';
+        $leet_replace['к'] = '(к|к\.|к\-|К|k|K)';
+        $leet_replace['л'] = '(л|л\.|л\-|Л|Λ|λ)';
+        $leet_replace['м'] = '(м|м\.|м\-|М|m|M|μ)';
+        $leet_replace['н'] = '(н|н\.|н\-|Н|h|H)';
+        $leet_replace['о'] = '(о|о\.|о\-|О|o|O|Φ|¤|°|ø|0)';
+        $leet_replace['п'] = '(п|п\.|п\-|П|π)';
+        $leet_replace['р'] = '(р|р\.|р\-|Р|p|P|ρ|¶|þ)';
+        $leet_replace['с'] = '(с|с\.|с\-|С|Ç|ç|¢|€|<|\(|{|©|c|C)';
+        $leet_replace['т'] = '(т|т\.|т\-|Т|τ|7|T)';
+        $leet_replace['у'] = '(у|у\.|у\-|У|Y|y|¥|γ|ÿ|ý|Ÿ|Ý)';
+        $leet_replace['ф'] = '(ф|ф\.|ф\-|Ф|φ)';
+        $leet_replace['х'] = '(х|х\.|х\-|Х|x|X|χ)';
+        $leet_replace['ц'] = '(ц|ц\.|ц\-|Ц)';
+        $leet_replace['ч'] = '(ч|ч\.|ч\-|Ч|4)';
+        $leet_replace['ш'] = '(ш|ш\.|ш\-|Ш)';
+        $leet_replace['щ'] = '(щ|щ\.|щ\-|Щ)';
+        $leet_replace['ъ'] = '(ъ|ъ\.|ъ\-|Ъ)';
+        $leet_replace['ы'] = '(ы|ы\.|ы\-|Ы)';
+        $leet_replace['ь'] = '(ь|ь\.|ь\-|Ь)';
+        $leet_replace['э'] = '(э|э\.|э\-|Э)';
+        $leet_replace['ю'] = '(ю|ю\.|ю\-|Ю)';
+        $leet_replace['я'] = '(я|я\.|я\-|Я|R)';
+
         $censorChecks = array();
         for ($x = 0, $xMax = count($badwords); $x < $xMax; $x++) {
             $censorChecks[$x] = $fullWords
